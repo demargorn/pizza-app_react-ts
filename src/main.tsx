@@ -20,7 +20,7 @@ const Menu = lazy(() => import('./pages/Menu/Menu')); // ленивая загр
 
 const router = createBrowserRouter([
    {
-      path: '/',
+      path: '/pizza-app_react-ts',
       element: (
          <RequireAuth>
             <Layout />
