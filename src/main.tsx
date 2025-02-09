@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       ),
       children: [
          {
-            path: '/',
+            path: '/pizza-app_react-ts',
             element: (
                <Suspense fallback={<>Загрузка...</>}>
                   <Menu />
