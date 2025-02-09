@@ -1,0 +1,9 @@
+.headling {
+   font-family: 'Open sans', sans-serif;
+   font-size: 36px;
+   font-weight: 600;
+   font-style: normal;
+   line-height: 120%;
+   color: var(--text-color);
+   margin: 0;
+}

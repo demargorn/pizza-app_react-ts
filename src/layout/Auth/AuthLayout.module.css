@@ -1,0 +1,19 @@
+.layout {
+   display: flex;
+   min-height: 100vh;
+}
+
+.logo {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex: 1;
+}
+
+.content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-left: 1px solid var(--separator-color);
+   flex: 1;
+}
