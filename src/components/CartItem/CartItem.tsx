@@ -8,20 +8,14 @@ const CartItem = (props: ICartItemProps) => {
    const dispatch = useDispatch<TypeAppDispatch>();
 
    // функция увеличения количества в корзине
-   const increase = () => {
-      dispatch(cartActions.add(props.id));
-   };
-
+   const increase = () => dispatch(cartActions.add(props.id));
+   
    // функция уменьшения количества в корзине
-   const decrease = () => {
-      dispatch(cartActions.remove(props.id));
-   };
-
+   const decrease = () => dispatch(cartActions.remove(props.id));
+   
    // функция удаления элемента из корзины
-   const remove = () => {
-      dispatch(cartActions.delete(props.id));
-   };
-
+   const remove = () => dispatch(cartActions.delete(props.id));
+   
    return (
       <div className={styles['item']}>
          <div className={styles['image']} style={{ backgroundImage: `url(${props.image})` }}></div>

@@ -33,10 +33,8 @@ const Menu = () => {
       }
    };
 
-   const updateFilter = (e: ChangeEvent<HTMLInputElement>) => {
-      setFilter(e.target.value);
-   };
-
+   const updateFilter = (e: ChangeEvent<HTMLInputElement>) => setFilter(e.target.value);
+   
    useEffect(() => {
       getMenu(filter);
    }, []);

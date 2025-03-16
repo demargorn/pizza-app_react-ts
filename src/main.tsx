@@ -1,6 +1,6 @@
 import { lazy, StrictMode, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router';
 import { Provider } from 'react-redux';
 import axios from 'axios';
 import store from './store/store.ts';
@@ -18,7 +18,7 @@ import './index.css';
 
 const Menu = lazy(() => import('./pages/Menu/Menu')); // ленивая загрузка
 
-const router = createBrowserRouter([
+const router = createHashRouter([
    {
       path: '/',
       element: (
@@ -28,7 +28,7 @@ const router = createBrowserRouter([
       ),
       children: [
          {
-            path: '/pizza-app_react-ts',
+            path: '/',
             element: (
                <Suspense fallback={<>Загрузка...</>}>
                   <Menu />
